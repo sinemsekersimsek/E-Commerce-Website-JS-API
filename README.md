@@ -25,7 +25,7 @@ This is a simple E-Commerce web application built using HTML, CSS, and JavaScrip
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/Advocateilker/E-Commerce-Website-JS-API.git
+   git clone https://github.com/sinemsekersimsek/E-Commerce-Website-JS-API.git
 
 ## Usage
 
