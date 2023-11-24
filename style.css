@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+}
+
+header{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(rgba(241, 238, 238, 0.5),rgba(9, 236, 20, 0.5));
+}
+
+header h1{
+    text-shadow: 0 0 3px rgb(238, 10, 10);
+    font-size: 42px;
+}
+    
+
+header input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+header div{
+    display: flex;
+    gap: 10px;
+}
+
+header div button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: .3s ease;
+}
+
+header div button:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+header div button:nth-child(1){
+    background-color: rgb(247, 4, 186);
+}
+header div button:nth-child(2){
+    background-color: green;
+}
+header div button:nth-child(3){
+    background-color: rgb(204, 248, 7);
+    color: red;
+}
+
+.user-form{
+  background-color: black;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .1rem;
+  border-radius: .5rem;
+  position: relative;
+}
+
+.user-form input{
+  border: 1px solid gray;
+  background-color: olivedrab;
+  padding: .5rem 1rem;
+  font-size: 13px;
+  border-radius: .3rem;
+  color:#fff;
+  font-family: inherit;
+  width: 100%;
+
+}
+
+.user-form input:focus{
+  outline: none;
+
+}
+
+.user-form input::placeholder{
+  color:wheat;
+
+}
+
+.user-form input:focus::placeholder{
+  opacity: .5;
+  transition: opacity .4s ease;
+}
+
+.user-form button{
+  position: absolute;
+  right: 1.5rem;
+  font-size: 14px;
+  border: none;
+  width: 8%;
+  border-radius: .3rem;
+  background-color: black;
+  color:#fff;
+  padding: .5px;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+
+/* Kategori*/
+section{
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.categories{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 40px;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 88%;
+}
+
+
+.category-card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 30px rgba(20, 20, 20, 0.231);
+  }
+  
+  .category-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .category-card .slide {
+    position: absolute;
+    bottom: -100px;
+    background: white;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 2px 2px 10px black;
+    opacity: 0;
+  }
+
+  .category-card:hover .slide{
+    bottom: 10px;
+    transition: .4s ease-in-out;
+    opacity: 1;
+  }
+  
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 120px;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 1100px) {
+    .products {
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+  
+  .card {
+    max-width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+      rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+      rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px,
+      rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card .action {
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .card .action span {
+    color: greenyellow;
+  }
+  
+  .card .action button {
+    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-family: 'poppins';
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.521);
+    cursor: pointer;
+    transition: scale 300ms;
+  }
+  
+  .card .action button:hover {
+    scale: 0.96;
+  }
+  
+
+  
+  .modal-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(128, 128, 128, 0.4);
+    display: none;
+    place-items: center;
+  }
+  
+  .active {
+    display: grid;
+  }
+  
+  .modal {
+    background: white;
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .modal #icon {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .modal #icon img {
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .modal #icon img:hover {
+    scale: 0.87;
+  }
+  .modal #list {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    overflow: auto;
+    gap: 30px;
+    padding: 14px;
+  }
+  .modal #list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .modal #list .item img {
+    width: 60px;
+    border-radius: 7px;
+  }
+
+  .item .price {
+    color: green;
+  }
+
+  .modal #list .item #delete {
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .modal #delete:hover {
+    transform: rotate(15deg);
+  }
+  
+  .modal #total {
+    text-align: center;
+  }
+  .modal #total span {
+    color: rgb(0, 203, 0);
+    font-weight: bold;
+  }
+  

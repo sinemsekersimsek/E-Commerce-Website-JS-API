@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>E-Commerce</h1>
+
+
+        <form id="form" class="user-form">
+            <input type="text" id="search" placeholder="Search Products" autocomplete="off" />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+
+
+        <div>
+            <button id="basket">Basket</button>
+            <button>Sign Up</button>
+            <button>Sign In</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="category-sec">
+            <h1>Categories</h1>
+            <div class="categories"></div>
+        </section>
+
+        <section>
+            <h1>Products</h1>
+            <div class="products"></div>
+        </section>
+    </main>
+
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div id="icon">
+                <img id="close" src="images/e-close.png" />
+            </div>
+            <div id="list"></div>
+            <p id="total">
+                <span id="count">0 product</span> Total:
+                <span id="total-price">0</span> &#8378;
+            </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
